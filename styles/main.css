@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Open Sans", "Roboto", serif;
+}
+
+#landing {
+  background-color: #D0F2FF;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#landing #title-box {
+  text-align: center;
+  margin: auto;
+  color: #0D87B5;
+}
+
+/*# sourceMappingURL=main.css.map */

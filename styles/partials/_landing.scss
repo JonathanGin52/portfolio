@@ -1,0 +1,14 @@
+@import '../modules/config';
+
+#landing {
+    background-color: $background-colour;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    #title-box {
+        text-align: center;
+        margin: auto;
+        color: $blue-text-colour;
+    }
+}

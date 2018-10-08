@@ -1,2 +1,3 @@
 *.swp
 *.css.map
+.DS_Store

@@ -1,0 +1,14 @@
+.social-btn {
+    display: inline;
+    margin: 0.5rem;
+
+    a {
+        color: $soft-white;
+        font-size: 3rem;
+        @include transition(color 0.3s);
+
+        @include on-event {
+            color: invert($soft-white);
+        }
+    }
+}

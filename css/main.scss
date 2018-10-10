@@ -1,6 +1,34 @@
-// Custom components
-@import 'partials/components';
+@charset 'UTF-8';
 
-// Vendor components
-@import 'vendor/font-awesome/fontawesome';
-@import 'vendor/font-awesome/brands';
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Components
+@import
+  'components/social-btn',
+  'components/fancy-line',
+  'components/button';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/landing',
+  'layout/footer';
+
+// 5. Vendors
+@import
+  // 'vendor/bourbon/bourbon',
+  // 'vendor/neat/neat',
+  // 'vendor/normalize',
+  'vendor/font-awesome/fontawesome',
+  'vendor/font-awesome/brands';

@@ -1,0 +1,14 @@
+#landing {
+    background-color: $background-colour;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-shadow: 1.5px 2.5px rgba(0,0,0,0.3);
+
+    #title-box {
+        text-align: center;
+        margin: auto;
+        color: $soft-white;
+    }
+}

@@ -1,24 +1,63 @@
 @charset "UTF-8";
 * {
+  font-family: "Open Sans", "Roboto", serif;
   margin: 0;
   padding: 0;
 }
 
-* {
-  font-family: "Open Sans", "Roboto", serif;
+.fancy-line {
+  border: 0;
+  height: 1px;
+  position: relative;
+  margin: 0.5em 0;
+}
+.fancy-line:before {
+  top: -0.5em;
+  height: 1em;
+}
+.fancy-line:after {
+  height: 0.5em;
+  top: calc(-0.5em + 1px);
+  background: #FAFCF8;
+}
+.fancy-line, .fancy-line:before {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 75%);
+}
+
+.social-btn {
+  display: inline;
+  margin: 0.5em;
+}
+.social-btn a {
+  color: #FAFCF8;
+  font-size: 2.5em;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.social-btn a:hover, .social-btn a:focus {
+  color: #050307;
 }
 
 #landing {
-  background-color: #D0F2FF;
+  background-color: #77a6f7;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-content: center;
 }
+#landing h1, #landing h2 {
+  text-shadow: 1.5px 2.5px rgba(0, 0, 0, 0.3);
+}
 #landing #title-box {
   text-align: center;
   margin: auto;
-  color: #0D87B5;
+  color: #FAFCF8;
+}
+#landing ul {
+  margin-top: 0.75em;
 }
 
 /*!
@@ -5021,13 +5060,8 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
-<<<<<<< HEAD
   src: url("../webfonts/fa-brands-400.eot");
   src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
-=======
-  src: url("../../../webfonts/fa-brands-400.eot");
-  src: url("../../../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../../webfonts/fa-brands-400.woff2") format("woff2"), url("../../../webfonts/fa-brands-400.woff") format("woff"), url("../../../webfonts/fa-brands-400.ttf") format("truetype"), url("../../../webfonts/fa-brands-400.svg#fontawesome") format("svg");
->>>>>>> 715e7505e5c96c7a2706035743cb3545b1ddf19e
 }
 .fab {
   font-family: "Font Awesome 5 Brands";

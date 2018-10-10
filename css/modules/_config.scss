@@ -1,7 +1,8 @@
 @import 'colours';
 @import 'typography';
-@import 'reset';
 
 * {
     font-family: $font-stack;
+    margin: 0;
+    padding: 0;
 }

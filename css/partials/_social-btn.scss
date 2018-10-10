@@ -1,0 +1,14 @@
+.social-btn {
+    display: inline;
+    margin: 0.5em;
+
+    a {
+        color: $soft-white;
+        font-size: 2.5em;
+        @include transition(color 0.3s);
+
+        &:hover, &:focus {
+            color: invert($soft-white);
+        }
+    }
+}

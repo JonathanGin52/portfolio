@@ -39,3 +39,7 @@
   -o-transition: $args;
   transition: $args;
 }
+
+@mixin rounded-img {
+  border-radius: 50%;
+}

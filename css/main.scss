@@ -6,11 +6,12 @@
   'abstracts/functions',
   'abstracts/mixins';
 
-// 2. Components
+// 2. Vendors
 @import
-  'components/social-btn',
-  'components/fancy-line',
-  'components/button';
+  'vendor/bourbon/bourbon',
+  'vendor/neat/neat.scss',
+  'vendor/font-awesome/fontawesome',
+  'vendor/font-awesome/brands';
 
 // 3. Base stuff
 @import
@@ -25,9 +26,8 @@
   'layout/landing',
   'layout/footer';
 
-// 5. Vendors
+// 5. Components
 @import
-  'vendor/bourbon/bourbon',
-  'vendor/neat/neat',
-  'vendor/font-awesome/fontawesome',
-  'vendor/font-awesome/brands';
+  'components/social-btn',
+  'components/fancy-line',
+  'components/button';

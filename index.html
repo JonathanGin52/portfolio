@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,18 +13,18 @@
     gtag('config', 'UA-127045673-1');
   </script> -->
 
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/onepagescroll.min.js"></script>
   <!-- Link custom fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div id="landing">
-    <div class="row">
-      <div id="title-box">
+  <div id="scroll">
+    <section id="header">
+      <div id="landing-content">
         <h1>👋 Hi, I'm Jonathan Gin.</h1>
         <div class="fancy-line" aria-hidden="true"></div>
-        <h2>Website coming soon!</h2>
+        <h2 id="quote">Shopify Dev Degree Intern</h2>
         <ul>
           <li class="social-btn"><a href="https://www.facebook.com/jonathan.gin.1" target="_blank" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-square"></i></a></li>
           <li class="social-btn"><a href="https://www.instagram.com/jonathangin52/" target="_blank" aria-label="Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a></li>
@@ -33,7 +33,33 @@
         </ul>
       </div>
       <div id="profile-img"><img src="img/me.jpg" alt="A picture of me!"></div>
-    </div>
+    </section>
+
+    <section id="education">
+      <div class="layer bottom">
+        <div class="content-wrap">
+          <div class="content-body">
+            <h2>Shopify Dev Degree</h2>
+            <p>Shopify Dev Degree is a 4 year, work-integrated university program that combines 4500+ hours of work experience with an accredited computer science degree.</p>
+          </div>
+          <img src="img/shopify.png" alt="Lassonde School of Engineering">
+        </div>
+      </div>
+
+      <div class="layer top">
+        <div class="content-wrap">
+          <div class="content-body">
+            <h2>Lassonde School of Engineering</h2>
+            <p>The Lassonde School of Engineering is a professional engineering school at York University.</p>
+          </div>
+          <img src="img/lassonde.png" alt="Shopify Inc">
+        </div>
+      </div>
+      <div id="slider" aria-hidden="true"></div>
+    </section>
   </div>
+
+  <script src="js/slider.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

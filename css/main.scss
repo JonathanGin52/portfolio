@@ -8,8 +8,8 @@
 
 // 2. Vendors
 @import
-  'vendor/bourbon/bourbon',
   'vendor/neat/neat.scss',
+  'vendor/one-page-scroll/onepagescroll',
   'vendor/font-awesome/fontawesome',
   'vendor/font-awesome/brands';
 
@@ -23,7 +23,7 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/landing',
+  'layout/education',
   'layout/footer';
 
 // 5. Components

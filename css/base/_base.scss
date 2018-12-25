@@ -22,8 +22,3 @@ html {
   padding: 0;
   margin: 0;
 }
-
-.row {
-  @include grid-container;
-  // @include grid-visual;
-}

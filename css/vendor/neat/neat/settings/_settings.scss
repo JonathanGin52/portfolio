@@ -72,3 +72,12 @@ $neat-grid: () !default;
 ///
 
 $neat-custom-grid: () !default;
+
+$landing-grid: (
+  columns: 1,
+);
+
+$landing-grid-phone-up: (
+  columns: 12,
+  media: 480px,
+);

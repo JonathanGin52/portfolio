@@ -5193,7 +5193,7 @@ body {
 }
 
 #header {
-  background-color: #101214;
+  background-color: #74b9ff;
   min-height: 100vh;
   text-shadow: 1.5px 2.5px rgba(0, 0, 0, 0.3);
 }
@@ -5215,9 +5215,6 @@ body {
 }
 #header #landing-content h1 {
   font-size: 2.5rem;
-}
-#header #landing-content q {
-  font-style: italic;
 }
 @media only screen and (min-width: 480px) {
   #header #landing-content {
@@ -5261,6 +5258,10 @@ body {
   min-height: 100vh;
   overflow: hidden;
 }
+#education a {
+  text-decoration: none;
+  color: inherit;
+}
 #education .layer {
   position: absolute;
   width: 100vw;
@@ -5292,18 +5293,15 @@ body {
   margin-bottom: 0.5rem;
 }
 #education .bottom {
-  background: #222;
+  background: white;
   z-index: 1;
 }
 #education .bottom .content-body {
   right: 5%;
-  color: #fff;
-}
-#education .bottom h2 {
-  color: #FDAB00;
+  color: #2D3436;
 }
 #education .top {
-  background: white;
+  background: #2D3436;
   z-index: 2;
   width: 50vw;
   transform: skew(-30deg);
@@ -5316,7 +5314,10 @@ body {
 }
 #education .top .content-wrap .content-body {
   left: 5%;
-  color: #222;
+  color: #fff;
+}
+#education .top .content-wrap .content-body h2 {
+  color: #FF9F43;
 }
 #education #slider {
   top: 50%;
@@ -5324,7 +5325,7 @@ body {
   transform-origin: top;
   height: 200%;
   position: absolute;
-  background-color: #FDAB00;
+  background-color: #FF9F43;
   width: 5px;
   left: 50%;
   z-index: 3;

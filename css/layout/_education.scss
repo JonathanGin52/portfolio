@@ -4,6 +4,12 @@
     min-height: 100vh;
     overflow: hidden;
 
+    a {
+        text-decoration: none;
+        color: inherit;
+        // border-bottom: dotted 1px;
+    }
+
     .layer {
         position: absolute;
         width: 100vw;
@@ -40,21 +46,17 @@
     }
 
     .bottom {
-        background: $education-dark-background;
+        background: white;
         z-index: 1;
 
         .content-body {
             right: 5%;
-            color: #fff;
-        }
-
-        h2 {
-            color: $education-secondary-colour;
+            color: $education-dark;
         }
     }
 
     .top {
-        background: white;
+        background: $education-dark;
         z-index: 2;
         width: 50vw;
         transform: skew(-30deg);
@@ -67,7 +69,11 @@
 
             .content-body {
                 left: 5%;
-                color: $education-dark-background;
+                color: #fff;
+
+                h2 {
+                    color: $education-light;
+                }
             }
         }
     }
@@ -78,7 +84,7 @@
         transform-origin: top;
         height: 200%;
         position: absolute;
-        background-color: $education-secondary-colour;
+        background-color: $education-light;
         width: 5px;
         left: 50%;
         z-index: 3;

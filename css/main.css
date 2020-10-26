@@ -5343,6 +5343,7 @@ body {
   -ms-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
+  text-decoration: none;
 }
 .social-btn a:hover, .social-btn a:active, .social-btn a:focus {
   color: #050307;

@@ -4,6 +4,7 @@
 
     a {
         color: $soft-white;
+        text-decoration: none;
         font-size: 3rem;
         @include transition(color 0.3s);
 

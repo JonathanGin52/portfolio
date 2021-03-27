@@ -1,0 +1,77 @@
+.Header {
+  display: flex;
+  background-color: #101214;
+  font-size: calc(10px + 2vmin);
+  color: #CDCDCD;
+  justify-content: center;
+  padding: 6rem 3rem;
+}
+
+.ImageContainer {
+  padding-right: 6rem;
+}
+
+.Image {
+  height: 30vmin;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+hr {
+  display: none;
+}
+
+.Summary {
+  max-width: 80vmin;
+}
+
+.Summary a {
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px dotted white;
+  color: #7A7C80;
+}
+
+.Social {
+  margin: 0 1.25rem;
+  font-size: calc(16px + 3vmin);
+  color: #A4A4A4;
+}
+
+.Social:hover {
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-device-width : 480px) {
+  .Header {
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .ImageContainer {
+    padding: 8rem 0rem 2rem;
+  }
+
+  .Image {
+    height: 60vw;
+  }
+
+  hr {
+    display: unset;
+    min-width: 75%;
+  }
+
+  .SocialLinks {
+    margin-top: 1.8rem;
+  }
+}

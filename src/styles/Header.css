@@ -1,10 +1,10 @@
-.Header {
+#Header {
   display: flex;
-  background-color: #101214;
+  background-color: #2E3440;
   font-size: calc(10px + 2vmin);
-  color: #CDCDCD;
+  color: #ECEFF4;
   justify-content: center;
-  padding: 6rem 3rem;
+  padding: 5rem 3rem 5rem;
 }
 
 .ImageContainer {
@@ -12,9 +12,10 @@
 }
 
 .Image {
-  height: 30vmin;
+  height: 25vmin;
   pointer-events: none;
   border-radius: 50%;
+  border: 0.5rem solid #88C0D0;
 }
 
 hr {
@@ -22,26 +23,26 @@ hr {
 }
 
 .Summary {
-  max-width: 80vmin;
+  max-width: 75vmin;
 }
 
-.Summary a {
-  text-decoration: none;
-  cursor: pointer;
-  border-bottom: 1px dotted white;
-  color: #7A7C80;
+.SocialLinks {
+  margin-top: 7vh;
+  padding: 0;
 }
 
 .Social {
-  margin: 0 1.25rem;
+  margin: 0 3vh;
   font-size: calc(16px + 3vmin);
   color: #A4A4A4;
+  display: inline;
+  text-decoration: none;
 }
 
-.Social:hover {
-  color: white;
+.Social:hover, .Social:focus .Social:active {
+  color: #88C0D0;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .Social a {
@@ -49,8 +50,39 @@ hr {
   color: inherit;
 }
 
-@media only screen and (max-device-width : 480px) {
-  .Header {
+#email-link {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+#email-link:hover span::before, #email-link:focus span::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#email-link span {
+  position: relative;
+  display: inline-block;
+  color: #88C0D0;
+}
+#email-link span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #56A5BC;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #56A5BC;
+          text-decoration-color: #56A5BC;
+  -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+}
+
+@media only screen and (max-device-width : 500px) {
+  #Header {
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
@@ -69,9 +101,5 @@ hr {
   hr {
     display: unset;
     min-width: 75%;
-  }
-
-  .SocialLinks {
-    margin-top: 1.8rem;
   }
 }

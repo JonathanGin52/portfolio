@@ -1,0 +1,79 @@
+#Experience {
+  background-color: #ECEFF4;
+  color: #2E3440;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 2rem;
+  font-size: 4rem;
+}
+
+.filterControl {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 1rem 0rem;
+  font-size: calc(20px + 0.6vw);
+}
+
+.filterButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 2rem;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filterButton::after {
+  content: attr(data-text);
+  content: attr(data-text)/"";
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  font-weight: 700;
+}
+
+.filterControl button:hover, .filterControl button:focus, .filterControl .active {
+  text-decoration: underline;
+  outline: none;
+  font-weight: 700;
+}
+
+.linksContainer {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.timelineMedia {
+  margin-right: 0.75rem;
+  font-weight: 600;
+  padding: 0.4rem 0.5rem;
+  text-decoration: none;
+}
+
+@media only screen and (max-device-width : 500px) {
+  .filterControl {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .filterControl button {
+    margin: 0;
+  }
+}
+
+@media speech {
+  filterButton::after {
+    display: none;
+  }
+}

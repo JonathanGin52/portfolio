@@ -117,8 +117,9 @@ const TimelineItemLink = ({text, url, colour}: TimelineItemLinkProps) => {
     <a
       href={url}
       target="_blank"
+      rel="noopener"
       style={{...baseStyle, ...style}}
-      className="timelineMedia"
+      className="timelineItemLink"
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
       onFocus={() => setActive(true)}

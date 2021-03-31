@@ -1,0 +1,18 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ECEFF4;
+  background-color: #2E3440;
+  height: 25vh;
+  padding: 1rem 1rem 2rem;
+}
+
+.footerTitle {
+  font-size: calc(20px + 1.8vmin);
+}
+
+.footerSubtitle {
+  font-size: calc(12px + 1vmin);
+}

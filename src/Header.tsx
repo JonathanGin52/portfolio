@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import {jonathan} from './assets';
+import HoverLink from './HoverLink';
 import './styles/Header.css';
 
 const Header = () => {
@@ -22,17 +23,13 @@ const Header = () => {
           Hi, I&apos;m Jonathan. I&apos;m currently working as a software
           developer at Shopify. Visit me at some at some of the platforms below,
           or email me at{' '}
-          <a
-            id="email-link"
+          <HoverLink
             href="mailto:hello@jonathangin.me"
+            text="hello@jonathangin.me"
             target="_blank"
             rel="noopener"
             aria-label="Email"
-          >
-            <span data-content="hello@jonathangin.me">
-              hello@jonathangin.me
-            </span>
-          </a>
+          />
           {/* */}.
         </p>
         <ul className="SocialLinks">

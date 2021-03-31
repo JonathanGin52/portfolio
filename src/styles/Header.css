@@ -1,10 +1,10 @@
 #Header {
   display: flex;
+  justify-content: center;
+  color: #ECEFF4;
   background-color: #2E3440;
   font-size: calc(10px + 2vmin);
-  color: #ECEFF4;
-  justify-content: center;
-  padding: 5rem 3rem 5rem;
+  padding: 5rem 3rem;
 }
 
 .ImageContainer {
@@ -48,37 +48,6 @@ hr {
 .Social a {
   text-decoration: none;
   color: inherit;
-}
-
-#email-link {
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
-  transition: -webkit-clip-path 275ms ease;
-  transition: clip-path 275ms ease;
-  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
-}
-#email-link:hover span::before, #email-link:focus span::before {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-#email-link span {
-  position: relative;
-  display: inline-block;
-  color: #88C0D0;
-}
-#email-link span::before {
-  position: absolute;
-  content: attr(data-content);
-  color: #56A5BC;
-  transition: -webkit-clip-path 275ms ease;
-  transition: clip-path 275ms ease;
-  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #56A5BC;
-          text-decoration-color: #56A5BC;
-  -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-          clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
 }
 
 @media only screen and (max-device-width : 500px) {

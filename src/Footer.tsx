@@ -1,13 +1,13 @@
 import React from 'react';
 
 import HoverLink from './HoverLink';
-import './styles/Footer.css';
+import styles from './styles/Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer id="footer">
-      <h3 className="footerTitle">Let&apos;s connect!</h3>
-      <p className="footerSubtitle">
+    <footer id={styles.Footer}>
+      <h3 className={styles.Title}>Let&apos;s connect!</h3>
+      <p className={styles.Subtitle}>
         Learn more by visiting my{' '}
         <HoverLink
           href="https://www.github.com/JonathanGin52"

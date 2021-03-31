@@ -9,17 +9,17 @@ import {
 
 import {jonathan} from './assets';
 import HoverLink from './HoverLink';
-import './styles/Header.css';
+import styles from './styles/Header.module.css';
 
 const Header = () => {
   return (
-    <header id="Header">
-      <div className="ImageContainer">
-        <img src={jonathan} className="Image" alt="Jonathan Gin" />
+    <header id={styles.Header}>
+      <div className={styles.ImageContainer}>
+        <img src={jonathan} className={styles.Image} alt="Jonathan Gin" />
       </div>
       <hr />
       <article>
-        <p className="Summary">
+        <p className={styles.Summary}>
           Hi, I&apos;m Jonathan. I&apos;m currently working as a software
           developer at Shopify. Visit me at some at some of the platforms below,
           or email me at{' '}
@@ -32,8 +32,8 @@ const Header = () => {
           />
           {/* */}.
         </p>
-        <ul className="SocialLinks">
-          <li className="Social">
+        <ul className={styles.SocialLinks}>
+          <li className={styles.Social}>
             <a
               href="https://www.github.com/JonathanGin52"
               target="_blank"
@@ -43,7 +43,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
-          <li className="Social">
+          <li className={styles.Social}>
             <a
               href="https://www.linkedin.com/in/jonathangin"
               target="_blank"
@@ -53,7 +53,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
-          <li className="Social">
+          <li className={styles.Social}>
             <a
               href="https://twitter.com/jonathangin52"
               target="_blank"
@@ -63,7 +63,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
-          <li className="Social">
+          <li className={styles.Social}>
             <a
               href="https://www.instagram.com/jonathangin52"
               target="_blank"

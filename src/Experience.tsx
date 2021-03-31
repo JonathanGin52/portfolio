@@ -7,7 +7,7 @@ import {
   TimelineItemData,
   experience,
 } from './data/timelineData';
-import './styles/Experience.css';
+import styles from './styles/Experience.module.css';
 
 type FilterOption = 'All' | ExperienceCategory;
 
@@ -22,9 +22,9 @@ const Experience = () => {
   const [filter, setFilter] = useState<FilterOption>('All');
 
   return (
-    <section id="Experience">
-      <h2>Experience</h2>
-      <div className="filterControl">
+    <section id={styles.Experience}>
+      <h2 className={styles.SectionTitle}>Experience</h2>
+      <div className={styles.FilterControl}>
         {Object.entries(CATEGORY_TO_COLOUR).map(([category, colour]) => {
           return (
             <button
@@ -32,7 +32,9 @@ const Experience = () => {
               type="button"
               data-text={category}
               style={{color: colour}}
-              className={`filterButton ${filter === category ? ' active' : ''}`}
+              className={`${styles.FilterButton} ${
+                filter === category ? styles.active : ''
+              }`}
               onClick={() => setFilter(category as FilterOption)}
             >
               {category}
@@ -55,7 +57,7 @@ const Experience = () => {
             let linksMarkup = null;
             if (links) {
               linksMarkup = (
-                <div className="linksContainer">
+                <div className={styles.LinksContainer}>
                   {links.map(({text, url}) => {
                     return (
                       <TimelineItemLink
@@ -119,7 +121,7 @@ const TimelineItemLink = ({text, url, colour}: TimelineItemLinkProps) => {
       target="_blank"
       rel="noopener"
       style={{...baseStyle, ...style}}
-      className="timelineItemLink"
+      className={styles.TimelineItemLink}
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
       onFocus={() => setActive(true)}

@@ -3,11 +3,11 @@ import React from 'react';
 import Header from './Header';
 import Experience from './Experience';
 import Footer from './Footer';
-import './styles/App.css';
+import styles from './styles/App.module.css';
 
 const App = () => {
   return (
-    <div id="App">
+    <div id={styles.App}>
       <Header />
       <Experience />
       <Footer />

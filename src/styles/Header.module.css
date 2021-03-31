@@ -12,7 +12,8 @@
 }
 
 .Image {
-  height: 25vmin;
+  height: 25vh;
+  width: 25vh;
   pointer-events: none;
   border-radius: 50%;
   border: 0.5rem solid #88C0D0;
@@ -65,6 +66,7 @@ hr {
 
   .Image {
     height: 60vw;
+    width: 60vw;
   }
 
   hr {

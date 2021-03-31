@@ -1,4 +1,4 @@
-#footer {
+#Footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,10 +9,10 @@
   padding: 1rem 1rem 2rem;
 }
 
-.footerTitle {
+.Title {
   font-size: calc(20px + 1.8vmin);
 }
 
-.footerSubtitle {
+.Subtitle {
   font-size: calc(12px + 1vmin);
 }

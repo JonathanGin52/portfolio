@@ -35,7 +35,8 @@
     ],
     "rules": {
       "@shopify/jsx-no-hardcoded-content": "off",
-      "react/jsx-no-target-blank": "off"
+      "react/jsx-no-target-blank": "off",
+      "no-console": "off"
     }
   },
   "prettier": "@shopify/prettier-config",

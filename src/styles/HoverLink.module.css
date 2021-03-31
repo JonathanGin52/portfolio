@@ -1,4 +1,4 @@
-.hoverLink {
+.HoverLink {
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -6,16 +6,19 @@
   transition: clip-path 275ms ease;
   transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
 }
-.hoverLink:hover span::before, .hoverLink:focus span::before {
+
+.HoverLink:hover span::before, .HoverLink:focus span::before {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-.hoverLink span {
+
+.HoverLink span {
   position: relative;
   display: inline-block;
   color: #88C0D0;
 }
-.hoverLink span::before {
+
+.HoverLink span::before {
   position: absolute;
   content: attr(data-content);
   color: #56A5BC;

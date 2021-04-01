@@ -85,26 +85,55 @@ const experience: TimelineItemData[] = [
     title: 'Shopify - Shopify Fulfillment Network',
     subtitle: 'Fullstack Developer (Part-Time)',
     category: ExperienceCategory.Work,
-    links: [
-      {
-        url: 'https://www.shopify.com/fulfillment',
-        text: 'Learn More',
-      },
-    ],
     items: [
       <p>
-        Developed and maintained frontend components along with comprehensive
-        unit tests using <strong>React</strong>.
+        Worked on the{' '}
+        <a
+          href="https://www.shopify.com/fulfillment"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Shopify Fulfillment Network
+        </a>{' '}
+        prior to launch and supported application post-launch.
       </p>,
       <p>
         Built <strong>GraphQL</strong> endpoints and constructed data models to
         support the application backend.
       </p>,
-      'Wrote middleware software to integrate internal APIs with third party logistics APIs.',
+      <p>
+        Developed and maintained frontend components along with comprehensive
+        unit tests using <strong>React</strong>.
+      </p>,
+      'Wrote middleware software to integrate internal APIs with third party logistics.',
     ],
   },
   {
-    date: 'Mar 2018',
+    date: 'Mar 2019 - Present',
+    title: 'Various Hackathons',
+    subtitle: 'Mentor',
+    category: ExperienceCategory.Volunteer,
+    items: [
+      <p>
+        Mentor hackers at various hackathons including{' '}
+        <a href="https://hackthenorth.com" target="_blank" rel="noreferrer">
+          Hack the North
+        </a>
+        ,{' '}
+        <a href="https://mh5.masseyhacks.ca" target="_blank" rel="noreferrer">
+          MasseyHacks
+        </a>{' '}
+        and{' '}
+        <a href="https://hackwestern.com" target="_blank" rel="noreferrer">
+          Hack Western
+        </a>
+        .
+      </p>,
+      'Guide hackers through issues related to frontend, backend, and project ideation.',
+    ],
+  },
+  {
+    date: 'Feb 2018',
     title: 'ProfitOverflow',
     subtitle: 'Hack the Hammer',
     category: ExperienceCategory.Project,
@@ -124,7 +153,13 @@ const experience: TimelineItemData[] = [
         Bitcoin trading using a recurrent neural network built using{' '}
         <strong>Keras</strong> on top of <strong>TensorFlow</strong>.
       </p>,
-      'Awarded first place prize at Hack the Hammer (≈100 participants).',
+      <p>
+        Awarded first place prize at{' '}
+        <a href="https://s1.hackthehammer.com" target="_blank" rel="noferrer">
+          Hack the Hammer
+        </a>{' '}
+        (≈100 participants).
+      </p>,
     ],
   },
   {

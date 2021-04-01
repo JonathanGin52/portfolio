@@ -4,6 +4,18 @@
   margin-bottom: -1rem;
 }
 
+#Experience a {
+  color: #506e93;
+}
+
+#Experience a:visited {
+  color: #4C566A;
+}
+
+#Experience a:hover, a:focus, a:active {
+  color: #4C566A;
+}
+
 .SectionTitle {
   margin: 0;
   padding-top: 2rem;

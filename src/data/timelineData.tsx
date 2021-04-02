@@ -16,7 +16,7 @@ type TimelineLink = {
 export type TimelineItemData = {
   date: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   category: ExperienceCategory;
   links?: TimelineLink[];
   items: ReactNode[];
@@ -37,26 +37,51 @@ const experience: TimelineItemData[] = [
     ],
   },
   {
+    date: 'June 2020 - Present',
+    title: 'Dev Degree Dashboard',
+    category: ExperienceCategory.Project,
+    items: [
+      <p>
+        Built a fullstack web application to track Dev Degree students&apos;
+        past projects and teams using <strong>Ruby on Rails</strong>,{' '}
+        <strong>React</strong>, and <strong>GraphQL</strong>.
+      </p>,
+      <p>
+        Aggregate data from various sources and programmatically refresh data
+        daily.
+      </p>,
+      <p>
+        Set up performance monitoring with <strong>Datadog</strong>, as well as
+        error handling and reporting using <strong>Bugsnag</strong>.
+      </p>,
+      <p>
+        Implemented user authentication, continuous integration, and continuous
+        deployment.
+      </p>,
+    ],
+  },
+  {
     date: 'May 2020 - Dec 2020',
     title: 'Shopify - Experiments Platform',
     subtitle: 'Data Engineer (Part-Time)',
     category: ExperienceCategory.Work,
     items: [
       'Built and launched internal experimentation platform, emporwering teams to conduct cross-surface experiments.',
-      'Championed a team of three responsible for creating a data visualization tool to calculate the number of samples required to attain significance under Bayesian statistics.',
+      'Championed a team of three responsible for creating a data visualization tool to calculate the number of samples required to attain significance using Bayesian statistics.',
       <p>
         Identified and removed a bottleneck during experiment group
         partitioning, improving worst case performance by <strong>99.7%</strong>
-        .
+        {/* */}.
       </p>,
       <p>
         Developed data pipelines to process and analyze data using{' '}
         <strong>Python</strong> and <strong>Apache Spark</strong>.
       </p>,
       <p>
-        Authored and documented new metrics written in <strong>SQL</strong>.
+        Authored and documented new performance metrics written in{' '}
+        <strong>SQL</strong>.
       </p>,
-      'Conducted user testing sessions with data scientists to iterate and improve product.',
+      'Conducted usability testing sessions with data scientists to iterate and improve product.',
     ],
   },
   {
@@ -75,12 +100,15 @@ const experience: TimelineItemData[] = [
       },
     ],
     items: [
-      'Built a slide deck creation tool that dynamically generates a presentation from speech input.',
+      'Built a slide deck creation tool that dynamically generates a PowerPoint presentation while the user is presenting.',
+      <p>
+        Created a Google Slides API client using <strong>Express</strong> and{' '}
+        <strong>Node.js</strong> to manage slide elements in real time.
+      </p>,
       <p>
         Leveraged <strong>Google Cloud NLP</strong> for entity extraction and
         salience calculation.
       </p>,
-      'Created a Google Slides API client capable of managing slide elements in real time.',
       'Selected as one of the winners at PennAppsXX (≈1250 participants).',
     ],
   },
@@ -106,16 +134,17 @@ const experience: TimelineItemData[] = [
         support the application backend.
       </p>,
       <p>
-        Developed and maintained frontend components along with comprehensive
-        unit tests using <strong>React</strong>.
+        Developed and maintained modular frontend components along with
+        comprehensive unit tests using <strong>React</strong>,{' '}
+        <strong>Jest</strong>, and <strong>Enzyme</strong>.
       </p>,
       'Wrote middleware software to integrate internal APIs with third party logistics.',
     ],
   },
   {
     date: 'Mar 2019 - Present',
-    title: 'Various Hackathons',
-    subtitle: 'Mentor',
+    title: 'Mentor',
+    subtitle: 'Various Hackathons',
     category: ExperienceCategory.Volunteer,
     items: [
       <p>
@@ -154,8 +183,16 @@ const experience: TimelineItemData[] = [
     items: [
       <p>
         Created a cryptocurrency portfolio manager to conduct high-frequency
-        Bitcoin trading using a recurrent neural network built using{' '}
+        Bitcoin trading using a recurrent neural network built with{' '}
         <strong>Keras</strong> on top of <strong>TensorFlow</strong>.
+      </p>,
+      <p>
+        Trained model using historical data obtained via the Coindesk API and
+        fetched real-time data from{' '}
+        <a href="https://cryptowat.ch" target="_blank" rel="noreferrer">
+          cryptowat.ch
+        </a>{' '}
+        to generate bi-minutely predictions.
       </p>,
       <p>
         Awarded first place prize at{' '}

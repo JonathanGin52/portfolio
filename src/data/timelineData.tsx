@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-key */
+
+import React, {ReactNode} from 'react';
+
 export enum ExperienceCategory {
   Work = 'Work',
   Project = 'Projects',
@@ -15,7 +19,7 @@ export type TimelineItemData = {
   subtitle: string;
   category: ExperienceCategory;
   links?: TimelineLink[];
-  items: React.ReactNode[];
+  items: ReactNode[];
 };
 
 const experience: TimelineItemData[] = [
@@ -127,7 +131,7 @@ const experience: TimelineItemData[] = [
         <a href="https://hackwestern.com" target="_blank" rel="noreferrer">
           Hack Western
         </a>
-        .
+        {/* */}.
       </p>,
       'Guide hackers through issues related to frontend, backend, and project ideation.',
     ],
@@ -155,7 +159,7 @@ const experience: TimelineItemData[] = [
       </p>,
       <p>
         Awarded first place prize at{' '}
-        <a href="https://s1.hackthehammer.com" target="_blank" rel="noferrer">
+        <a href="https://s1.hackthehammer.com" target="_blank" rel="noreferrer">
           Hack the Hammer
         </a>{' '}
         (≈100 participants).

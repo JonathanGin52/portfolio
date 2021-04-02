@@ -22,9 +22,9 @@ const Footer = () => {
           text="LinkedIn"
           target="_blank"
           rel="noopener"
-          aria-label="Email"
+          aria-label="LinkedIn"
         />
-        , or <HoverLink href="#footer" text="Resume" aria-label="Email" />.
+        , or <HoverLink href="/resume.pdf" text="Resume" aria-label="Resume" />.
       </p>
     </footer>
   );

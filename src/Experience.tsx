@@ -80,7 +80,7 @@ const Experience = () => {
                 bodyContainerStyle={{color: '#2E3440'}}
               >
                 <h3>{title}</h3>
-                <h4>{subtitle}</h4>
+                <h4 className={styles.Subtitle}>{subtitle}</h4>
                 {linksMarkup}
                 {items.map((item, idx) => {
                   /* eslint-disable react/no-array-index-key */

@@ -67,6 +67,10 @@
   margin-top: 1rem;
 }
 
+.Subtitle {
+  color: #434C5E;
+}
+
 .TimelineItemLink {
   margin-right: 0.75rem;
   font-weight: 600;

@@ -7,6 +7,24 @@
   padding: 5rem 3rem;
 }
 
+#Resume {
+  position: absolute;
+  text-decoration: none;
+  font-size: calc(10px + 1vmin);
+  top: calc(15px + 1.05vmin);
+  right: calc(15px + 1.05vmin);
+  color: #ECEFF4;
+  border: 1px solid #ECEFF4;
+  border-radius: 0.25em;
+  padding: 0.55rem 1rem;
+  transition: background-color 200ms ease-in 0s, border-color 200ms ease-in 0s, color 200ms ease-in 0s;
+}
+
+#Resume:hover, #Resume:focus {
+  border-color: #88C0D0;
+  color: #88C0D0;
+}
+
 .ImageContainer {
   padding-right: 6rem;
 }

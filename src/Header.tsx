@@ -14,6 +14,9 @@ import styles from './styles/Header.module.css';
 const Header = () => {
   return (
     <header id={styles.Header}>
+      <a id={styles.Resume} href="/resume.pdf">
+        Resume
+      </a>
       <div className={styles.ImageContainer}>
         <img src={jonathan} className={styles.Image} alt="Jonathan Gin" />
       </div>

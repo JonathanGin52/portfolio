@@ -66,7 +66,7 @@ const experience: TimelineItemData[] = [
     subtitle: 'Data Engineer (Part-Time)',
     category: ExperienceCategory.Work,
     items: [
-      'Built and launched internal experimentation platform, emporwering teams to conduct cross-surface experiments.',
+      'Built and launched internal experimentation platform, empowering teams to conduct cross-surface experiments.',
       'Championed a team of three responsible for creating a data visualization tool to calculate the number of samples required to attain significance using Bayesian statistics.',
       <p>
         Identified and removed a bottleneck during experiment group

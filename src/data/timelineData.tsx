@@ -24,7 +24,14 @@ export type TimelineItemData = {
 
 const experience: TimelineItemData[] = [
   {
-    date: 'Jan 2021 - Present',
+    date: 'Sept 2021 - Present',
+    title: 'Shopify - Caching Platform',
+    subtitle: 'Production Engineer (Part-Time)',
+    category: ExperienceCategory.Work,
+    items: ['Coming soon...'],
+  },
+  {
+    date: 'Jan 2021 - Aug 2021',
     title: 'Shopify - Checkout',
     subtitle: 'Backend Developer (Part-Time)',
     category: ExperienceCategory.Work,

@@ -1,6 +1,6 @@
 #Experience {
-  background-color: #ECEFF4;
-  color: #2E3440;
+  background-color: #eceff4;
+  color: #2e3440;
   margin-bottom: -1rem;
 }
 
@@ -9,11 +9,13 @@
 }
 
 #Experience a:visited {
-  color: #4C566A;
+  color: #4c566a;
 }
 
-#Experience a:hover, a:focus, a:active {
-  color: #4C566A;
+#Experience a:hover,
+a:focus,
+a:active {
+  color: #4c566a;
 }
 
 .SectionTitle {
@@ -44,19 +46,21 @@
 
 .FilterButton::after {
   content: attr(data-text);
-  content: attr(data-text)/"";
+  content: attr(data-text) / '';
   height: 0;
   visibility: hidden;
   overflow: hidden;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   pointer-events: none;
   font-weight: 700;
 }
 
-.FilterControl button:hover, .FilterControl button:focus, .FilterControl .active {
+.FilterControl button:hover,
+.FilterControl button:focus,
+.FilterControl .active {
   text-decoration: underline;
   outline: none;
   font-weight: 700;
@@ -68,7 +72,7 @@
 }
 
 .Subtitle {
-  color: #434C5E;
+  color: #434c5e;
 }
 
 .TimelineItemLink {
@@ -78,7 +82,7 @@
   text-decoration: none;
 }
 
-@media only screen and (max-device-width : 500px) {
+@media only screen and (max-device-width: 500px) {
   .FilterControl {
     flex-wrap: wrap;
     justify-content: space-around;

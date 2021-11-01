@@ -1,8 +1,8 @@
 #Header {
   display: flex;
   justify-content: center;
-  color: #ECEFF4;
-  background-color: #2E3440;
+  color: #eceff4;
+  background-color: #2e3440;
   font-size: calc(10px + 2vmin);
   padding: 5rem 3rem;
 }
@@ -13,16 +13,18 @@
   font-size: calc(10px + 1vmin);
   top: calc(15px + 1.05vmin);
   right: calc(15px + 1.05vmin);
-  color: #ECEFF4;
-  border: 1px solid #ECEFF4;
+  color: #eceff4;
+  border: 1px solid #eceff4;
   border-radius: 0.25em;
   padding: 0.55rem 1rem;
-  transition: background-color 200ms ease-in 0s, border-color 200ms ease-in 0s, color 200ms ease-in 0s;
+  transition: background-color 200ms ease-in 0s, border-color 200ms ease-in 0s,
+    color 200ms ease-in 0s;
 }
 
-#Resume:hover, #Resume:focus {
-  border-color: #88C0D0;
-  color: #88C0D0;
+#Resume:hover,
+#Resume:focus {
+  border-color: #88c0d0;
+  color: #88c0d0;
 }
 
 .ImageContainer {
@@ -34,7 +36,7 @@
   width: 25vh;
   pointer-events: none;
   border-radius: 50%;
-  border: 0.5rem solid #88C0D0;
+  border: 0.5rem solid #88c0d0;
 }
 
 hr {
@@ -53,13 +55,14 @@ hr {
 .Social {
   margin: 0 3vh;
   font-size: calc(16px + 3vmin);
-  color: #A4A4A4;
+  color: #a4a4a4;
   display: inline;
   text-decoration: none;
 }
 
-.Social:hover, .Social:focus .Social:active {
-  color: #88C0D0;
+.Social:hover,
+.Social:focus .Social:active {
+  color: #88c0d0;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -69,7 +72,7 @@ hr {
   color: inherit;
 }
 
-@media only screen and (max-device-width : 500px) {
+@media only screen and (max-device-width: 500px) {
   #Header {
     min-height: 100vh;
     flex-direction: column;

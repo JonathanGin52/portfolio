@@ -7,27 +7,28 @@
   transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
 }
 
-.HoverLink:hover span::before, .HoverLink:focus span::before {
+.HoverLink:hover span::before,
+.HoverLink:focus span::before {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .HoverLink span {
   position: relative;
   display: inline-block;
-  color: #88C0D0;
+  color: #88c0d0;
 }
 
 .HoverLink span::before {
   position: absolute;
   content: attr(data-content);
-  color: #56A5BC;
+  color: #56a5bc;
   transition: -webkit-clip-path 275ms ease;
   transition: clip-path 275ms ease;
   transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
   text-decoration: underline;
-  -webkit-text-decoration-color: #56A5BC;
-          text-decoration-color: #56A5BC;
+  -webkit-text-decoration-color: #56a5bc;
+  text-decoration-color: #56a5bc;
   -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-          clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
 }

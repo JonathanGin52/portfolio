@@ -23,9 +23,18 @@ const Header = () => {
       <hr />
       <article>
         <p className={styles.Summary}>
-          Hi, I&apos;m Jonathan. I&apos;m currently working as a software
-          developer at Shopify. Visit me at some of the platforms below, or
-          email me at{' '}
+          Hey there{' '}
+          <span role="img" aria-label="wave emoji">
+            👋
+          </span>
+          , I&apos;m Jonathan!
+        </p>
+        <p className={styles.Summary}>
+          I&apos;m currently working as a software engineer at Shopify.
+        </p>
+        <p className={styles.Summary}>
+          I&apos;d love to connect on one of the following platforms.
+          Alternatively, you can email me at{' '}
           <HoverLink
             href="mailto:hello@jonathangin.me"
             text="hello@jonathangin.me"

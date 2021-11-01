@@ -24,8 +24,8 @@ const Header = () => {
       <article>
         <p className={styles.Summary}>
           Hi, I&apos;m Jonathan. I&apos;m currently working as a software
-          developer at Shopify. Visit me at some at some of the platforms below,
-          or email me at{' '}
+          developer at Shopify. Visit me at some of the platforms below or email
+          me at{' '}
           <HoverLink
             href="mailto:hello@jonathangin.me"
             text="hello@jonathangin.me"

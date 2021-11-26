@@ -28,19 +28,28 @@ const experience: TimelineItemData[] = [
     title: 'Shopify - Caching Platform',
     subtitle: 'Production Engineer (Part-Time)',
     category: ExperienceCategory.Work,
-    items: ['Coming soon...'],
-  },
-  {
-    date: 'Jan 2021 - Aug 2021',
-    title: 'Shopify - Checkout',
-    subtitle: 'Backend Developer (Part-Time)',
-    category: ExperienceCategory.Work,
     items: [
       <p>
-        Develop a large scale application to power Shopify Checkout flows using{' '}
-        <strong>Ruby on Rails</strong> and <strong>GraphQL</strong>.
+        Develop a generic developer interface for applications to access a
+        distributed in-memory datastore (VECache) built on top of{' '}
+        <strong>KeyDB</strong>.
       </p>,
-      'Evaluate strategies to migrate legacy code to meet new requirements and achieve feature parity.',
+      <p>
+        Instrument application monitoring using <strong>OpenTelemetry</strong>{' '}
+        and analyze data in <strong>Google BigQuery</strong>.
+      </p>,
+      <p>
+        Create <strong>Grafana</strong> dashboards to visualize observability
+        data and implement real-time monitoring in <strong>Splunk</strong>.
+      </p>,
+      <p>
+        Deploy and manage VECache clusters across multiple regions using{' '}
+        <strong>Google Kubernetes Engine</strong>.
+      </p>,
+      <p>
+        Implement automatic hotkey detection and dynamically resolve issue by
+        splitting traffic across multiple clusters.
+      </p>,
     ],
   },
   {
@@ -53,17 +62,33 @@ const experience: TimelineItemData[] = [
         past projects and teams using <strong>Ruby on Rails</strong>,{' '}
         <strong>React</strong>, and <strong>GraphQL</strong>.
       </p>,
-      <p>
-        Aggregate data from various sources and programmatically refresh data
-        daily.
-      </p>,
+      'Aggregated data from multiple sources and wrote a job to programmatically refresh data daily',
       <p>
         Set up performance monitoring with <strong>Datadog</strong>, as well as
-        error handling and reporting using <strong>Bugsnag</strong>.
+        error tracking and reporting using <strong>Bugsnag</strong>.
       </p>,
       <p>
         Implemented user authentication, continuous integration, and continuous
-        deployment.
+        deployment using <strong>Buildkite</strong>.
+      </p>,
+    ],
+  },
+  {
+    date: 'Jan 2021 - Aug 2021',
+    title: 'Shopify - Checkout',
+    subtitle: 'Backend Developer (Part-Time)',
+    category: ExperienceCategory.Work,
+    items: [
+      <p>
+        Developed a large-scale application to power mission critical checkout
+        flows for <strong>over 1 million</strong> shops using{' '}
+        <strong>Ruby on Rails</strong> and <strong>GraphQL</strong>.
+      </p>,
+      'Evaluated strategies to migrate legacy code to meet new requirements and achieve feature parity.',
+      'Proposed, developed, and documented new domain objects to enable order editing and draft orders.',
+      <p>
+        Deployed automated load testing scripts and participated in resiliency
+        testing using <strong>Toxiproxy</strong>.
       </p>,
     ],
   },

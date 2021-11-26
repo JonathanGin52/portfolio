@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header id={styles.Header}>
       <a id={styles.Resume} href="/resume.pdf">
-        Resume
+        Résumé
       </a>
       <div className={styles.ImageContainer}>
         <img src={jonathan} className={styles.Image} alt="Jonathan Gin" />

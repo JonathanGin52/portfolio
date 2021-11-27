@@ -39,8 +39,8 @@ const experience: TimelineItemData[] = [
         and analyze data in <strong>Google BigQuery</strong>.
       </p>,
       <p>
-        Create <strong>Grafana</strong> dashboards to visualize observability
-        data and implement real-time monitoring in <strong>Splunk</strong>.
+        Create <strong>Grafana</strong> dashboards to visualize log data and
+        implement real-time monitoring in <strong>Splunk</strong>.
       </p>,
       <p>
         Deploy and manage VECache clusters across multiple regions using{' '}
@@ -87,8 +87,8 @@ const experience: TimelineItemData[] = [
       'Evaluated strategies to migrate legacy code to meet new requirements and achieve feature parity.',
       'Proposed, developed, and documented new domain objects to enable order editing and draft orders.',
       <p>
-        Deployed automated load testing scripts and participated in resiliency
-        testing using <strong>Toxiproxy</strong>.
+        Deployed automated load testing scripts and performed resiliency testing
+        using <strong>Toxiproxy</strong>.
       </p>,
     ],
   },
@@ -98,8 +98,11 @@ const experience: TimelineItemData[] = [
     subtitle: 'Data Engineer (Part-Time)',
     category: ExperienceCategory.Work,
     items: [
-      'Built and launched internal experimentation platform, empowering teams to conduct cross-surface experiments.',
-      'Championed a team of three responsible for creating a data visualization tool to calculate the number of samples required to attain significance using Bayesian statistics.',
+      <p>
+        Built and launched internal experimentation platform, empowering teams
+        to conduct cross-product <strong>A/B tests</strong>.
+      </p>,
+      'Led a team of 3 to create a tool to calculate and visualize the sample size required to attain a target confidence level using Bayesian statistics.',
       <p>
         Identified and removed a bottleneck during experiment group
         partitioning, improving worst case performance by <strong>99.7%</strong>

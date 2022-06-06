@@ -30,7 +30,7 @@ const Header = () => {
           , I&apos;m Jonathan!
         </p>
         <p className={styles.Summary}>
-          I&apos;m currently working as a software engineer at Shopify.
+          I&apos;m currently working as a software engineer at GitHub.
         </p>
         <p className={styles.Summary}>
           I&apos;d love to connect on one of the following platforms.

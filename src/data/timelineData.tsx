@@ -24,7 +24,14 @@ export type TimelineItemData = {
 
 const experience: TimelineItemData[] = [
   {
-    date: 'Sept 2021 - Present',
+    date: 'Sept 2022 - Present',
+    title: 'GitHub - Growth',
+    subtitle: 'Software Engineer',
+    category: ExperienceCategory.Work,
+    items: [],
+  },
+  {
+    date: 'Sept 2021 - Apr 2022',
     title: 'Shopify - Caching Platform',
     subtitle: 'Production Engineer (Part-Time)',
     category: ExperienceCategory.Work,
@@ -53,7 +60,7 @@ const experience: TimelineItemData[] = [
     ],
   },
   {
-    date: 'June 2020 - Present',
+    date: 'June 2020 - Apr 2022',
     title: 'Dev Degree Dashboard',
     category: ExperienceCategory.Project,
     items: [

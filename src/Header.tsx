@@ -50,7 +50,7 @@ const Header = () => {
               href="https://www.github.com/JonathanGin52"
               target="_blank"
               rel="noopener"
-              aria-label="Instagram"
+              aria-label="GitHub"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -60,7 +60,7 @@ const Header = () => {
               href="https://www.linkedin.com/in/jonathangin"
               target="_blank"
               rel="noopener"
-              aria-label="Instagram"
+              aria-label="LinkedIn"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -70,7 +70,7 @@ const Header = () => {
               href="https://twitter.com/jonathangin52"
               target="_blank"
               rel="noopener"
-              aria-label="Instagram"
+              aria-label="Twitter"
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>

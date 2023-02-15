@@ -26,7 +26,7 @@ const experience: TimelineItemData[] = [
   {
     date: 'June 2022 - Present',
     title: 'GitHub - Growth',
-    subtitle: 'Software Engineer',
+    subtitle: 'Software Engineer II',
     category: ExperienceCategory.Work,
     items: [],
   },
@@ -37,24 +37,24 @@ const experience: TimelineItemData[] = [
     category: ExperienceCategory.Work,
     items: [
       <p>
-        Develop a generic developer interface for applications to access a
+        Developed a generic developer interface for applications to access a
         distributed in-memory datastore (VECache) built on top of{' '}
         <strong>KeyDB</strong>.
       </p>,
       <p>
-        Instrument application monitoring using <strong>OpenTelemetry</strong>{' '}
+        Instrumented application monitoring using <strong>OpenTelemetry</strong>{' '}
         and analyze data in <strong>Google BigQuery</strong>.
       </p>,
       <p>
-        Create <strong>Grafana</strong> dashboards to visualize log data and
+        Created <strong>Grafana</strong> dashboards to visualize log data and
         implement real-time monitoring in <strong>Splunk</strong>.
       </p>,
       <p>
-        Deploy and manage VECache clusters across multiple regions using{' '}
+        Deployed and managed VECache clusters across multiple regions using{' '}
         <strong>Google Kubernetes Engine</strong>.
       </p>,
       <p>
-        Implement automatic hotkey detection and dynamically resolve issue by
+        Implemented automatic hotkey detection and dynamically resolve issue by
         splitting traffic across multiple clusters.
       </p>,
     ],

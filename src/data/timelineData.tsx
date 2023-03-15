@@ -198,7 +198,7 @@ const experience: TimelineItemData[] = [
     ],
   },
   {
-    date: 'Mar 2019 - Present',
+    date: 'Mar 2019 - Apr 2022',
     title: 'Mentor',
     subtitle: 'Various Hackathons',
     category: ExperienceCategory.Volunteer,

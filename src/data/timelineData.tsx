@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 
-import React, {ReactNode} from 'react';
+import React, { ReactNode } from 'react';
 
 export enum ExperienceCategory {
   Work = 'Work',
@@ -28,7 +28,21 @@ const experience: TimelineItemData[] = [
     title: 'GitHub - Growth',
     subtitle: 'Software Engineer II',
     category: ExperienceCategory.Work,
-    items: [],
+    items: [
+      "Build and run experiments to drive activation and retention at GitHub.",
+      "Collaborated with cross-functional teams to identify growth opportunities and create scalable solutions to drive user engagement and adoption.",
+      <p>Successfully spearheaded my team's adoption of <a href="https://sorbet.org/" target="_blank" rel="noreferrer">Sorbet</a> by pair programming with teammates, writing documentation, and developing guidelines.</p>,
+      "Achieved 96% Sorbet coverage, resulting in improved code quality, faster development cycles, and increased confidence in our codebase.",
+    ],
+  },
+  {
+    date: 'Mar 2023 - Present',
+    title: 'World Health Organization (WHO)',
+    subtitle: 'Software Engineer',
+    category: ExperienceCategory.Volunteer,
+    items: [
+      "To be announced",
+    ],
   },
   {
     date: 'Sept 2021 - Apr 2022',
@@ -269,4 +283,4 @@ const experience: TimelineItemData[] = [
   },
 ];
 
-export {experience};
+export { experience };

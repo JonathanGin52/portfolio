@@ -29,9 +29,9 @@ const experience: TimelineItemData[] = [
     subtitle: 'Software Engineer II',
     category: ExperienceCategory.Work,
     items: [
-      "Build and run experiments to drive activation and retention at GitHub.",
-      "Collaborated with cross-functional teams to identify growth opportunities and create scalable solutions to drive user engagement and adoption.",
-      <p>Successfully spearheaded my team's adoption of <a href="https://sorbet.org/" target="_blank" rel="noreferrer">Sorbet</a> by pair programming with teammates, writing documentation, and developing guidelines.</p>,
+      "Build and run experiments to increase activation and retention at GitHub.",
+      "Collaborate with cross-functional teams to identify growth opportunities and create scalable solutions to drive user engagement and adoption.",
+      <p>Proactively led my team's adoption of <a href="https://sorbet.org/" target="_blank" rel="noreferrer">Sorbet</a> by developing guidelines, writing documentation, and pair programming with teammates.</p>,
       "Achieved 96% Sorbet coverage, resulting in improved code quality, faster development cycles, and increased confidence in our codebase.",
     ],
   },

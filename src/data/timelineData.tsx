@@ -26,12 +26,12 @@ const experience: TimelineItemData[] = [
   {
     date: 'June 2022 - Present',
     title: 'GitHub - Growth',
-    subtitle: 'Software Engineer II',
+    subtitle: 'Software Engineer III',
     category: ExperienceCategory.Work,
     items: [
       "Build and run experiments to increase activation and retention at GitHub.",
       "Collaborate with cross-functional teams to identify growth opportunities and create scalable solutions to drive user engagement and adoption.",
-      <p>Proactively led my team's adoption of <a href="https://sorbet.org/" target="_blank" rel="noreferrer">Sorbet</a> by developing guidelines, writing documentation, and pair programming with teammates.</p>,
+      <p>Proactively championed the initiative to introduce <a href="https://sorbet.org/" target="_blank" rel="noreferrer">Sorbet</a> by developing guidelines, writing documentation, and pair programming with teammates.</p>,
       "Achieved 96% Sorbet coverage, resulting in improved code quality, faster development cycles, and increased confidence in our codebase.",
     ],
   },
